@@ -30,3 +30,6 @@ def test_tuple_indexing():
 
 def test_boolean_logic():
     assert True and True
+
+def test_string_value():
+    assert "A" == "A"
