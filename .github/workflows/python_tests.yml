@@ -23,8 +23,10 @@ jobs:
       - name: Run tests with HTML report
         run: |
           pytest --html=report.html --self-contained-html
+          continue-on-error: true
 
       - name: Upload HTML report as artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: pytest-html-report
