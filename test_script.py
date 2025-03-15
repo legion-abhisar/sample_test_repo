@@ -31,5 +31,5 @@ def test_tuple_indexing():
 def test_boolean_logic():
     assert True and True
 
-def test_string_value():
-    assert "A" == "A"
+def test_type():
+    assert type("A") == type(1)
